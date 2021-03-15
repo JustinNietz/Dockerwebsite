@@ -19,10 +19,6 @@ body {
   border-radius: 15px;
 }
 
-.carousel-item {
-height: 20rem !important;
-}
-
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
   bottom: 3rem;
@@ -85,14 +81,18 @@ height: 20rem !important;
     font-size: 1.25rem;
     line-height: 1.4;
   }
-
+.carousel-item {
+height: 10rem !important;
+}
   .featurette-heading {
+    margin-top: 5px;
     font-size: 50px;
   }
 }
 
 @media (min-width: 62em) {
-  .featurette-heading {
-    margin-top: 7rem;
-  }
+
+.carousel-item {
+height: 25rem !important;
+}
 }
