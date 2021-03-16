@@ -95,7 +95,7 @@ body {
         margin-top: 5px;
         font-size: 50px;
     }
-    .carousel-img {
+    .carousel-img-right {
          visibility: hidden;
     }
 }
@@ -106,15 +106,14 @@ body {
         height: 25rem !important;
     }
 
-    .carousel-p {
+    .carousel-p-left {
         padding-right: 250px;
     }
 
-    .carousel-img {
+    .carousel-img-right {
         visibility: visible;
         width: 300px;
         height: 250px;
         margin-left: 530px;
     }
-
 }
