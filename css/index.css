@@ -7,6 +7,14 @@ nav {
   font-size: 18px;
 }
 
+.featurette-divider {
+    margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+  .affix {
+    top: 20px;
+    z-index: 9999 !important;
+  }
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 @media (min-width: 10em) {
