@@ -73,8 +73,8 @@
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
-@media (min-width: 10em) {
-        .carousel-img {
+@media (min-width: 20em) {
+        .carousel-img-right {
          visibility: hidden;
     }
 }
