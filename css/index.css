@@ -18,3 +18,28 @@ nav {
     z-index: 9999 !important;
 }
 
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+@media (min-width: 20em) {
+    .card-img {
+        visibility: hidden;
+        width: 250px;
+        height: 180px;
+    }
+}
+
+@media (min-width: 40em) {
+    .card-img {
+        visibility: hidden;
+        width: 250px;
+        height: 180px;
+    }
+}
+
+@media (min-width: 62em) {
+    .card-img {
+        visibility: visible;
+        width: 250px;
+        height: 180px;
+    }
+}
