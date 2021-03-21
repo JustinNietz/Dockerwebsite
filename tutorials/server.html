@@ -173,21 +173,127 @@
             <p>When we notice the whale icon in the top status bar, it shows that Docker Desktop is up and running.</p>
 
             <figure>
-                <img class="img-fluid rounded" src="../images/Docker_menubarMAC.png" alt="A whale icon is circled with red">
+                <img class="img-fluid rounded" src="../images/Docker_menubarMAC.png"
+                     alt="A whale icon is circled with red">
                 <figcaption>
                     Whale icon appears
                     <a href="https://docs.docker.com/docker-for-mac/install/" target="_blank"><p>via Docker
                         Documentation</p></a>
                 </figcaption>
             </figure>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, doloribus, dolorem iusto blanditiis unde
-                eius illum consequuntur neque dicta incidunt ullam ea hic porro optio ratione repellat perspiciatis.
-                Enim, iure!</p>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, doloribus, dolorem iusto blanditiis unde
-                eius illum consequuntur neque dicta incidunt ullam ea hic porro optio ratione repellat perspiciatis.
-                Enim, iure!</p>
+            <h5><strong>2. Pulling an Ubuntu Image from Docker Hub</strong></h5>
+            <p>We go to Docker Hub, and we search for an Ubuntu image.</p>
 
+            <figure>
+                <img class="img-fluid rounded" src="../images/Ubuntu_DockerHub.png" alt="Ubuntu image on Docker Hub">
+                <figcaption>Ubuntu image on Docker Hub</figcaption>
+            </figure>
+
+            <p>We copy the given command: <code>docker pull ubuntu</code>, then we paste it to any terminal. The command
+                runs like this.</p>
+
+            <figure>
+                <img class="img-fluid rounded" src="../images/pulled_Ubuntu_gitbash.png"
+                     alt="Pulling Ubuntu image in Git Bash">
+                <figcaption>Ubuntu image is pulled using Git Bash</figcaption>
+            </figure>
+
+            <p>We can check whether the Ubuntu image is located on our computer. To do that, we can use <code>docker
+                images</code> command.</p>
+            <h5><strong>3. Installing Vim and Apache 2</strong></h5>
+
+            <p>To install the programs, we need to log in our Ubuntu in Docker container. We use the following command
+                to do that: <code>docker run -it ubuntu:latest /bin/bash</code>. After doing that, we need to run the
+                <code>apt-get update </code> command to update all the packages.</p>
+
+            <figure>
+                <img class="img-fluid rounded" src="../images/apache2.png"
+                     alt="Installing Apache 2 in terminal">
+                <figcaption>Installing Apache 2</figcaption>
+            </figure>
+
+
+            <p>After updating, we can start installing Apache 2 on our image. We use the <code>apt-get install
+                apache2</code> command.</p>
+
+            <figure>
+                <img class="img-fluid rounded" src="../images/apt-get-update.png"
+                     alt="Using apt-get update command">
+                <figcaption>Updating packages using Command Prompt</figcaption>
+            </figure>
+            <p>Now, we can install Vim text editor using the <code>apt-get install vim</code> command.</p>
+
+            <figure>
+                <img class="img-fluid rounded" src="../images/vim.png"
+                     alt="Installing Vim text editor">
+                <figcaption>Installing Vim text editor</figcaption>
+            </figure>
+            <p>After installing Apache 2 and Vim, we can exit Ubuntu container using the <code>exit</code> command. Our
+                next task
+                is to commit the container to create a new Docker image. Firstly, we check the container using the
+                <code>docker ps -a</code> command. Secondly, we create a new Docker image using the <code>docker commit
+                    &lt;container ID> &lt;name of the new Docker image></code> command. Lastly, we check the new image
+                using the <code>docker images</code> command. All three steps are visible in the following image.
+            </p>
+
+            <figure>
+                <img class="img-fluid rounded" src="../images/share.png"
+                     alt="Three steps to create a new Docker image">
+                <figcaption>Three steps to create a new Docker image</figcaption>
+            </figure>
+
+            <h5><strong>4. How to Share a Directory Between Docker and Host</strong></h5>
+
+            <p>The Docker container does not save any data after we close it. If we want to read and save any data in
+                the
+                host, a shared directory is needed for Docker containers. To solve this problem, we use <code>docker run
+                    -it
+                    -p 127.0.0.1:80:80 -v &lt;directory of the host computer>:/var/www/html &lt;name of Docker image>
+                    /bin/bash</code> command.
+            </p>
+
+            <figure>
+                <img class="img-fluid rounded" src="../images/sharing_data.png"
+                     alt="How to share data">
+                <figcaption>Creating the shared directory</figcaption>
+            </figure>
+
+            <h5><strong>5. Using Vi to Create and Edit Index.html in the Shared Directory</strong></h5>
+
+            <p>We check the present working directory using <code>pwd</code> command. After checking it, we go to the directory
+                that will have the html file. To do that, we type <code>cd /var/www/html</code> command into the terminal. The
+                image above shows these steps.</p>
+
+            <p>When we are in the correct directory, we can finally create the <strong>index.html</strong> file using <code>vi index.html</code>
+                command. Pressing “i” key, we can begin editing the newly created file; we put our code here.</p>
+
+            <figure>
+                <img class="img-fluid rounded" src="../images/index_code.png"
+                     alt="Inserted code in index.html">
+                <figcaption>Inserting code into index.html</figcaption>
+            </figure>
+
+            <p>When we are done with editing, we press the “ESC” key then we type <code>:wq</code> command to save the
+            file and quit Vi.
+            </p>
+
+            <h5><strong>6. How to Use Docker to Host a Website</strong></h5>
+
+            <p>To host our website, we need to start Apache 2 service using <code>/etc/init.d/apache2 restart </code> command.</p>
+
+            <figure>
+                <img class="img-fluid rounded" src="../images/restart.png"
+                     alt="Starting Apache 2 service">
+                <figcaption>Starting Apache 2 service</figcaption>
+            </figure>
+
+            <p>After this step, we can see our website by typing <i>“127.0.0.1"</i> into the address bar of our browser.</p>
+            <figure>
+                <img class="img-fluid rounded" src="../images/Hello.png"
+                     alt="Website says: Hello, world! Congratulations!">
+                <figcaption>Website becomes visible</figcaption>
+            </figure>
 
             <hr class="featurette-divider">
 
