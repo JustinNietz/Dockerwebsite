@@ -43,3 +43,13 @@ nav {
         height: 180px;
     }
 }
+figure {
+    display: inline-block;
+}
+
+figure img {
+    vertical-align: top;
+}
+figure figcaption {
+    text-align: center;
+}
