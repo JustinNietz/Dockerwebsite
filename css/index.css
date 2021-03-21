@@ -53,3 +53,7 @@ figure img {
 figure figcaption {
     text-align: center;
 }
+
+body {
+    line-height: 2;
+}
