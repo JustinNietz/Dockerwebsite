@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Tutorials | Setup a web server using Docker</title>
+    <title>Tutorials | How to Setup a Web Server Using Docker</title>
 
     <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
     <!-- Bootstrap CSS -->
@@ -52,12 +52,11 @@
                         Tutorials
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="server.html">How to : Setup web server using
-                            Docker</a>
-                        <a class="dropdown-item" href="login.html">How to : Login to your Docker container</a>
-                        <a class="dropdown-item" href="connect.html">How to : Connect Docker with Pycharm</a>
+                        <a class="dropdown-item" href="server.html">How to Setup a Web Server Using Docker</a>
+                        <a class="dropdown-item" href="login.html">How to Login to Your Docker Container</a>
+                        <a class="dropdown-item" href="connect.html">How to Connect Docker with Pycharm</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="linux_commands.html">Extras : Linux Commands</a>
+                        <a class="dropdown-item" href="linux_commands.html">Extras: Linux Commands</a>
                     </div>
                 </li>
                 <li class="nav-item px-3">
@@ -80,7 +79,7 @@
         <div class="col-lg-8" data-spy="scroll" data-target="#navbar-example3" data-offset="0">
 
             <!-- Title -->
-            <h1 class="mt-4">How To Setup a Web Server Using Docker</h1>
+            <h1 class="mt-4">How to Setup a Web Server Using Docker</h1>
 
             <!-- Author -->
             <p class="lead">
@@ -126,7 +125,8 @@
                 </figcaption>
             </figure>
 
-            <p>Docker is running when the whale icon appears on the taskbar; we can access it from any terminal now.</p>
+            <p>Docker is running when the <strong>whale icon</strong> appears on the taskbar; we can access it from any
+                terminal now.</p>
 
             <figure>
                 <img class="img-fluid rounded" src="../images/Docker_taskbar.png" alt="Whale icon appears on task bar">
@@ -183,11 +183,13 @@
             </figure>
 
             <h5><strong>2. Pulling an Ubuntu Image from Docker Hub</strong></h5>
-            <p>We go to Docker Hub, and we search for an Ubuntu image.</p>
+            <p>We go to Docker Hub, and we search for an <strong>Ubuntu image</strong>.</p>
 
             <figure>
                 <img class="img-fluid rounded" src="../images/Ubuntu_DockerHub.png" alt="Ubuntu image on Docker Hub">
-                <figcaption>Ubuntu image on Docker Hub</figcaption>
+                <figcaption>Ubuntu image on Docker Hub
+                    <a href="https://hub.docker.com/_/ubuntu" target="_blank"><p>via Docker Hub</p></a>
+                </figcaption>
             </figure>
 
             <p>We copy the given command: <code>docker pull ubuntu</code>, then we paste it to any terminal. The command
@@ -203,9 +205,10 @@
                 images</code> command.</p>
             <h5><strong>3. Installing Vim and Apache 2</strong></h5>
 
-            <p>To install the programs, we need to log in our Ubuntu in Docker container. We use the following command
-                to do that: <code>docker run -it ubuntu:latest /bin/bash</code>. After doing that, we need to run the
-                <code>apt-get update </code> command to update all the packages.</p>
+            <p>To install the programs, we need to log in our Ubuntu in <strong>Docker container</strong>. We use the
+                following command to do that: <code>docker run -it ubuntu:latest /bin/bash</code>.
+                After doing that, we need to run the <code>apt-get update </code> command to update all the packages.
+            </p>
 
             <figure>
                 <img class="img-fluid rounded" src="../images/apache2.png"
@@ -214,7 +217,8 @@
             </figure>
 
 
-            <p>After updating, we can start installing Apache 2 on our image. We use the <code>apt-get install
+            <p>After updating, we can start installing <strong>Apache 2</strong> on our image. We use the <code>apt-get
+                install
                 apache2</code> command.</p>
 
             <figure>
@@ -222,7 +226,8 @@
                      alt="Using apt-get update command">
                 <figcaption>Updating packages using Command Prompt</figcaption>
             </figure>
-            <p>Now, we can install Vim text editor using the <code>apt-get install vim</code> command.</p>
+            <p>Now, we can install <strong>Vim text editor</strong> using the <code>apt-get install vim</code> command.
+            </p>
 
             <figure>
                 <img class="img-fluid rounded" src="../images/vim.png"
@@ -230,11 +235,11 @@
                 <figcaption>Installing Vim text editor</figcaption>
             </figure>
             <p>After installing Apache 2 and Vim, we can exit Ubuntu container using the <code>exit</code> command. Our
-                next task
-                is to commit the container to create a new Docker image. Firstly, we check the container using the
-                <code>docker ps -a</code> command. Secondly, we create a new Docker image using the <code>docker commit
-                    &lt;container ID> &lt;name of the new Docker image></code> command. Lastly, we check the new image
-                using the <code>docker images</code> command. All three steps are visible in the following image.
+                next task is to commit the container to create a new Docker image. Firstly, we check the container using
+                the <code>docker ps -a</code> command. Secondly, we create a new Docker image using the
+                <code>docker commit &lt;container ID> &lt;new Docker image name></code> command.
+                Lastly, we check the new image using the <code>docker images</code> command.
+                All three steps are visible in the following image.
             </p>
 
             <figure>
@@ -246,11 +251,9 @@
             <h5><strong>4. How to Share a Directory Between Docker and Host</strong></h5>
 
             <p>The Docker container does not save any data after we close it. If we want to read and save any data in
-                the
-                host, a shared directory is needed for Docker containers. To solve this problem, we use <code>docker run
-                    -it
-                    -p 127.0.0.1:80:80 -v &lt;directory of the host computer>:/var/www/html &lt;name of Docker image>
-                    /bin/bash</code> command.
+                the host, a <strong>shared directory</strong> is needed for Docker containers. To solve this problem, we
+                use <code>docker run -it -p 127.0.0.1:80:80 -v &lt;directory of the host computer>:/var/www/html
+                    &lt;Docker image name> /bin/bash</code> command.
             </p>
 
             <figure>
@@ -261,12 +264,13 @@
 
             <h5><strong>5. Using Vi to Create and Edit Index.html in the Shared Directory</strong></h5>
 
-            <p>We check the present working directory using <code>pwd</code> command. After checking it, we go to the directory
-                that will have the html file. To do that, we type <code>cd /var/www/html</code> command into the terminal. The
-                image above shows these steps.</p>
+            <p>We check the present working directory using <code>pwd</code> command. After checking it, we go to the
+                directory that will have the html file. To do that, we type <code>cd /var/www/html</code> command into
+                the terminal. The image above shows these steps.</p>
 
-            <p>When we are in the correct directory, we can finally create the <strong>index.html</strong> file using <code>vi index.html</code>
-                command. Pressing “i” key, we can begin editing the newly created file; we put our code here.</p>
+            <p>When we are in the correct directory, we can finally create the <strong>index.html</strong> file using
+                <code>vi index.html</code>command. Pressing <strong>“i” key</strong>, we can begin editing the newly
+                created file; we put our code here.</p>
 
             <figure>
                 <img class="img-fluid rounded" src="../images/index_code.png"
@@ -274,13 +278,14 @@
                 <figcaption>Inserting code into index.html</figcaption>
             </figure>
 
-            <p>When we are done with editing, we press the “ESC” key then we type <code>:wq</code> command to save the
-            file and quit Vi.
+            <p>When we are done with editing, we press the <strong>“ESC”</strong> key then we type <code>:wq</code>
+                command to save the file and quit Vi.
             </p>
 
             <h5><strong>6. How to Use Docker to Host a Website</strong></h5>
 
-            <p>To host our website, we need to start Apache 2 service using <code>/etc/init.d/apache2 restart </code> command.</p>
+            <p>To host our website, we need to start Apache 2 service using <code>/etc/init.d/apache2 restart </code>
+                command.</p>
 
             <figure>
                 <img class="img-fluid rounded" src="../images/restart.png"
@@ -288,7 +293,8 @@
                 <figcaption>Starting Apache 2 service</figcaption>
             </figure>
 
-            <p>After this step, we can see our website by typing <i>“127.0.0.1"</i> into the address bar of our browser.</p>
+            <p>After this step, we can see our website by typing <i>“127.0.0.1"</i> into the address bar of our browser.
+            </p>
             <figure>
                 <img class="img-fluid rounded" src="../images/Hello.png"
                      alt="Website says: Hello, world! Congratulations!">
