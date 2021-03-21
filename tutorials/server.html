@@ -80,25 +80,66 @@
         <div class="col-lg-8" data-spy="scroll" data-target="#navbar-example3" data-offset="0">
 
             <!-- Title -->
-            <h1 class="mt-4">How to: Setup a web server using Docker</h1>
+            <h1 class="mt-4">How To Setup a Web Server Using Docker</h1>
 
             <!-- Author -->
             <p class="lead">
                 by
-                <a href="#">Author</a>
+                <a href="#">Nikolett Muller</a>
             </p>
 
             <hr>
 
             <!-- Post Content -->
-            <h4 id="item-1">Item 1</h4>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, vero, obcaecati, aut,
-                error quam sapiente nemo saepe quibusdam sit excepturi nam quia corporis eligendi eos magni recusandae
-                laborum minus inventore?</p>
+            <h4 id="item-1"></h4>
+            <p class="lead">Let us see how we can build a web server image which can be used to build containers.</p>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste
-                ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus,
-                voluptatibus.</p>
+            <h5><strong>1. Installing Docker</strong></h5>
+
+            <p>Firstly, we need to install Docker.</p>
+
+            <h6>A, Instructions for Windows Users</h6>
+            <p>There are needed requirements to install Docker Desktop:</p>
+
+            <ul>
+                <li>Windows 10, version 1903 or higher</li>
+                <li>64 bit processor</li>
+                <li>4GB system RAM</li>
+                <li>BIOS-level hardware virtualization support must be enabled in the BIOS settings</li>
+                <li>Linux kernel update package is installed</li>
+                <li>WSL 2 feature is enabled</li>
+            </ul>
+
+            <p>If all requirements are met, we can download <strong>Docker Desktop Installer.exe </strong> from
+                <strong>Docker Hub</strong>. After that, we need to just double-click on the file to run the installer.
+                It is highly important that we ensure the<strong> Enable WSL 2 Features</strong> option is selected on
+                the Configuration page. By following the instructions given by the installation wizard, we can proceed
+                with the install. </p>
+
+            <p>Docker Desktop does not run automatically after we installed it. To start the program, we need to search
+                for it on our computer.</p>
+            <figure>
+                <img class="img-fluid rounded" src="../images/Finding_Docker.png"
+                     alt="Successful search for Docker Desktop">
+                <figcaption>
+                    Searching for Docker Desktop to run the program first time
+                </figcaption>
+            </figure>
+
+            <p>Docker is running when the whale icon appears on the taskbar; we can access it from any terminal now.</p>
+
+            <figure>
+                <img class="img-fluid rounded" src="../images/Docker_taskbar.png" alt="Whale icon appears on task bar">
+                <figcaption>Whale icon on task bar</figcaption>
+            </figure>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, doloribus, dolorem iusto blanditiis unde
+                eius illum consequuntur neque dicta incidunt ullam ea hic porro optio ratione repellat perspiciatis.
+                Enim, iure!</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, doloribus, dolorem iusto blanditiis unde
+                eius illum consequuntur neque dicta incidunt ullam ea hic porro optio ratione repellat perspiciatis.
+                Enim, iure!</p>
 
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, doloribus, dolorem iusto blanditiis unde
                 eius illum consequuntur neque dicta incidunt ullam ea hic porro optio ratione repellat perspiciatis.
@@ -106,14 +147,23 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, doloribus, dolorem iusto blanditiis unde
                 eius illum consequuntur neque dicta incidunt ullam ea hic porro optio ratione repellat perspiciatis.
                 Enim, iure!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, doloribus, dolorem iusto blanditiis unde
-                eius illum consequuntur neque dicta incidunt ullam ea hic porro optio ratione repellat perspiciatis.
-                Enim, iure!</p>
+
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, doloribus, dolorem iusto blanditiis unde
                 eius illum consequuntur neque dicta incidunt ullam ea hic porro optio ratione repellat perspiciatis.
                 Enim, iure!</p>
 
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, doloribus, dolorem iusto blanditiis unde
+                eius illum consequuntur neque dicta incidunt ullam ea hic porro optio ratione repellat perspiciatis.
+                Enim, iure!</p>
 
+            <figure>
+                <img class="img-fluid rounded" src="../images/Docker_macOS.png" alt="">
+                <figcaption>
+                    Dragging Docker app to Application folder
+                    <a href="https://docs.docker.com/docker-for-mac/install/" target="_blank"><p>via Docker
+                        Documentation</p></a>
+                </figcaption>
+            </figure>
             <hr class="featurette-divider">
 
 
