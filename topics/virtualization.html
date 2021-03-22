@@ -51,8 +51,10 @@
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="../tutorials/server.html">How to : Setup web server using
                             Docker</a>
-                        <a class="dropdown-item" href="../tutorials/login.html">How to : Login to your Docker container</a>
-                        <a class="dropdown-item" href="../tutorials/connect.html">How to : Connect Docker with Pycharm</a>
+                        <a class="dropdown-item" href="../tutorials/login.html">How to : Login to your Docker
+                            container</a>
+                        <a class="dropdown-item" href="../tutorials/connect.html">How to : Connect Docker with
+                            Pycharm</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="../tutorials/linux_commands.html">Extras : Linux Commands</a>
                     </div>
@@ -82,34 +84,95 @@
             <!-- Author -->
             <p class="lead">
                 by
-                <a href="#">Author</a>
+                <a href="../team.html">Justin Nietzer</a>
             </p>
 
 
             <!-- Preview Image -->
             <img class="img-fluid rounded" src="http://placehold.it/900x300" alt="">
 
-            <hr class="featurette-divider">
+            <hr>
 
             <!-- Post Content -->
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, vero, obcaecati, aut,
-                error quam sapiente nemo saepe quibusdam sit excepturi nam quia corporis eligendi eos magni recusandae
-                laborum minus inventore?</p>
+            <h2>Definition</h2>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste
-                ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus,
-                voluptatibus.</p>
+            <p>Virtualization allowed developers to run multiple OS (operating systems) in different VMs (virtual
+                machines) all running on the same host, aka one personal computer. Virtualization dissolved the need for
+                extra hardware resources.</p>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, doloribus, dolorem iusto blanditiis unde
-                eius illum consequuntur neque dicta incidunt ullam ea hic porro optio ratione repellat perspiciatis.
-                Enim, iure!</p>
+            <p>Before containers came along, a virtual machine was the technology for optimizing server capacity. VMs
+                are made to emulate the hardware of a physical computer with a complete operating system. They make it
+                possible to run multiple computers with different operating systems on the hardware of a single
+                server.</p>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, nostrum, aliquid, animi, ut quas placeat
-                totam sunt tempora commodi nihil ullam alias modi dicta saepe minima ab quo voluptatem obcaecati?</p>
+            <h2>What is a hypervisor?</h2>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, dolor quis. Sunt, ut, explicabo, aliquam
-                tenetur ratione tempore quidem voluptates cupiditate voluptas illo saepe quaerat numquam recusandae?
-                Qui, necessitatibus, est!</p>
+            <p>A hypervisor, or virtual machine monitor, is the software that enables multiple operating systems to run
+                side-by-side. The hypervisor separates available resources, like memory and storage, to each virtual
+                machine.</p>
+
+            <img class="center" width="420" height="300" src="../images/virtualization-daigram-416x420.jpg">
+
+            <p>In the above diagram, there is one Host Operating System with its hypervisor running three virtual
+                operating systems.</p>
+
+            <h2>Advantages of Virtualization</h2>
+
+            <ul>
+                <li>
+                    Virtual machines are folders that can be copied and moved just like any other file
+                </li>
+                <li>
+                    A team of developers can centralize workloads and run several operating systems without increasing
+                    overhead.
+                </li>
+                <li>
+                    There can be multiple operating systems running at the same time
+                </li>
+                <li>
+                    If there is a failure case, there is easy recovery and maintenance
+                </li>
+                <li>
+                    Because of less usage/need for extra infrastructure, total cost of ownership is down
+                </li>
+            </ul>
+
+            <h2>Disadvantages of Virtualization</h2>
+
+            <ul>
+                <li>
+                    VMs require significant RAM and CPU resources
+                </li>
+                <li>
+                    The software development life cycle is more complex with VMs
+                </li>
+                <li>
+                    Moving VMs between public and private clouds can become challenging
+                </li>
+                <li>
+                    Unstable performance because of one computer running multiple virtual machines
+                </li>
+                <li>
+                    Hypervisors’ efficiency is not as good as the host Operating System
+                </li>
+                <li>
+                    Longer boot-up time
+                </li>
+            </ul>
+
+            <h2>How to Install a Virtual Machine</h2>
+
+            <img class="center" width="420" height="315" src="../images/Virtualbox_logo.png">
+
+            <p>VirtualBox is a virtualization software so you can download other Operating Systems.
+            </p>
+            <p>
+                Watch the tutorial below on how to download VirtualBox on Windows 10:
+            </p>
+
+            <iframe class="center" width="420" height="315"
+                    src="https://www.youtube.com/embed/8mns5yqMfZk">
+            </iframe>
 
             <hr class="featurette-divider">
 
@@ -172,17 +235,17 @@
 <!-- /.container -->
 <!-- Pagination -->
 <nav aria-label="Page navigation example">
-  <ul class="pagination justify-content-center">
-    <li class="page-item disabled">
-      <a class="page-link" href="#" tabindex="-1">Previous</a>
-    </li>
-    <li class="page-item active"><a class="page-link" href="virtualization.html">1</a></li>
-    <li class="page-item"><a class="page-link" href="containerization.html">2</a></li>
-    <li class="page-item"><a class="page-link" href="compare.html">3</a></li>
-    <li class="page-item">
-      <a class="page-link" href="containerization.html">Next</a>
-    </li>
-  </ul>
+    <ul class="pagination justify-content-center">
+        <li class="page-item disabled">
+            <a class="page-link" href="#" tabindex="-1">Previous</a>
+        </li>
+        <li class="page-item active"><a class="page-link" href="virtualization.html">1</a></li>
+        <li class="page-item"><a class="page-link" href="containerization.html">2</a></li>
+        <li class="page-item"><a class="page-link" href="compare.html">3</a></li>
+        <li class="page-item">
+            <a class="page-link" href="containerization.html">Next</a>
+        </li>
+    </ul>
 </nav>
 
 <!-- Footer -->
