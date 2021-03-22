@@ -92,7 +92,7 @@
             <h4 id="item-1"></h4>
             <p class="lead">Let us see the steps we need to take to connect Docker with a Pycharm project.</p>
 
-            <h5><strong>1. Requirements</strong></h5>
+            <h2>1. Requirements</h2>
 
             <p>To start working, we need to check a couple of things beforehand. </p>
 
@@ -104,7 +104,7 @@
             </ul>
             <p>When all requirements are met, we need to start <strong>Docker Desktop</strong> and <strong>Pycharm
                 Pro</strong>.</p>
-            <h5><strong>2. Creating a New Project</strong></h5>
+            <h2>2. Creating a New Project</h2>
 
             <p>We create a new Python Project in Pycharm Pro. Then we go to <strong>Github</strong> and clone an
                 existing repository.</p>
@@ -116,9 +116,9 @@
                 </figcaption>
             </figure>
 
-            <p>Then we go back to Pycharm, click on <strong><i>VCS</i></strong> on top bar, then select <strong><i>Get
-                from Version Control…</i></strong> After that, we paste the URL of the existing repository and we give a
-                directory; finally, a quick click on to <strong><i>Clone button</i></strong>.</p>
+            <p>Then we go back to Pycharm, click on <strong>VCS</strong> on top bar, then select <strong>Get
+                from Version Control…</strong> After that, we paste the URL of the existing repository and we give a
+                directory; finally, a quick click on to <strong>Clone</strong> button.</p>
             <figure>
                 <img class="img-fluid rounded" src="../images/cloning_URL.png"
                      alt="We need to insert URL here">
@@ -135,28 +135,100 @@
                 <img class="img-fluid rounded" src="../images/Files.png"
                      alt="Local files">
                 <figcaption>
-                   Local files
+                    Local files
                 </figcaption>
             </figure>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, doloribus, dolorem iusto blanditiis unde
-                eius illum consequuntur neque dicta incidunt ullam ea hic porro optio ratione repellat perspiciatis.
-                Enim, iure!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, doloribus, dolorem iusto blanditiis unde
-                eius illum consequuntur neque dicta incidunt ullam ea hic porro optio ratione repellat perspiciatis.
-                Enim, iure!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, doloribus, dolorem iusto blanditiis unde
-                eius illum consequuntur neque dicta incidunt ullam ea hic porro optio ratione repellat perspiciatis.
-                Enim, iure!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, doloribus, dolorem iusto blanditiis unde
-                eius illum consequuntur neque dicta incidunt ullam ea hic porro optio ratione repellat perspiciatis.
-                Enim, iure!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, doloribus, dolorem iusto blanditiis unde
-                eius illum consequuntur neque dicta incidunt ullam ea hic porro optio ratione repellat perspiciatis.
-                Enim, iure!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, doloribus, dolorem iusto blanditiis unde
-                eius illum consequuntur neque dicta incidunt ullam ea hic porro optio ratione repellat perspiciatis.
-                Enim, iure!</p>
+            <h2>3. Adding TCP Socket</h2>
+
+            <p>We go to Docker now, because we need to look at whether <strong>Expose daemon on tcp://localhost:2375
+                without TLS</strong> is checked under <strong>Settings</strong>.</p>
+
+            <figure>
+                <img class="img-fluid rounded" src="../images/tcp.png"
+                     alt="We can check TCP here">
+                <figcaption>
+                    Exposing TCP without TLS
+                </figcaption>
+            </figure>
+
+            <p>After checking TCP in Docker, we go back to Pycharm, to <strong>File</strong>, then to
+                <strong>Settings</strong>, and here we select <strong>Docker</strong> under <strong>Build, Execution,
+                    Deployment</strong>. We click on + sign and select <strong>TCP socket</strong>; we type
+                <strong>tcp://localhost:2375</strong> into Engine API URL, and click on <strong>Apply</strong>.</p>
+            <figure>
+                <img class="img-fluid rounded" src="../images/adding_tcp.png"
+                     alt="We can add TCP here">
+                <figcaption>
+                    Adding TCP socket to Engine API URL
+                </figcaption>
+            </figure>
+            <h2>4. Adding Configuration</h2>
+
+            <p>We click on <strong>Add Configuration…</strong> on the top right corner, then on + sign; we select
+                <strong>Dockerfile</strong> under
+                <strong>Docker</strong>. We give a name (in this case: Barcode), then we choose Dockerfile in Dockerfile
+                dropdown menu.
+                We need to name the <strong>Image tag</strong> too (in this example: barcode). Before clicking on
+                <strong>Apply</strong> and <strong>OK</strong>, we need
+                to ensure that <strong>Run built image</strong> checkbox is checked.</p>
+
+            <figure>
+                <img class="img-fluid rounded" src="../images/Add_configuration.png"
+                     alt="We add configuration here">
+                <figcaption>
+                    Adding configuration
+                </figcaption>
+            </figure>
+
+            <p>Now we can try run the program by clicking on green button on top. If it runs successfully (log shows),
+                we have followed instructions properly so far.</p>
+            <figure>
+                <img class="img-fluid rounded" src="../images/Run_Program.png"
+                     alt="Program runs without error">
+                <figcaption>
+                    Log shows that program runs
+                </figcaption>
+            </figure>
+            <h2>5. Adding Interpreter</h2>
+
+            <p>We need to click on <strong>Python</strong> on the bottom right corner, and choose <strong>Add
+                Interpreter…</strong>, then <strong>Docker</strong>. Here, we click on <strong>Image name</strong>, the
+                placeholder will be filled automatically; we accept it by clicking on <strong>OK</strong>.</p>
+            <figure>
+                <img class="img-fluid rounded" src="../images/Add_Interpreter.png"
+                     alt="We add Interpreter here">
+                <figcaption>
+                    Adding Interpreter
+                </figcaption>
+            </figure>
+
+            <p>Now, we should select <strong>Interpreter Settings…</strong> on the bottom right corner. We choose the
+                <strong>newly added
+                    interpreter</strong> in the dropdown menu, and click on <strong>Apply</strong>, than
+                <strong>OK</strong>.</p>
+
+            <figure>
+                <img class="img-fluid rounded" src="../images/Interpreter_settings.png"
+                     alt="We set our interpreter">
+                <figcaption>
+                    Interpreter Settings
+                </figcaption>
+            </figure>
+
+            <h2>6. Sharing Project on GitHub</h2>
+
+            <p>By adding interpreter, we successfully completed the whole tutorial. Therefore, we now know how to connect
+                Docker with Pycharm. Our last task is just optional; we can share our project on GitHub by clicking on
+                <strong>Git</strong>, then selecting <strong>Share Project on GitHub</strong>
+                under <strong>GitHub</strong>.</p>
+            <figure>
+                <img class="img-fluid rounded" src="../images/Sharing_project.png"
+                     alt="We can share our project here">
+                <figcaption>
+                    Sharing our project on GitHub
+                </figcaption>
+            </figure>
 
 
             <hr class="featurette-divider">
