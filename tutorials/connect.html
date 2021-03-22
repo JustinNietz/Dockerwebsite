@@ -78,26 +78,73 @@
         <div class="col-lg-8" data-spy="scroll" data-target="#navbar-example3" data-offset="0">
 
             <!-- Title -->
-            <h1 class="mt-4">How to: Connect Docker with Pycharm</h1>
+            <h1 class="mt-4">How to Connect Docker with Pycharm</h1>
 
             <!-- Author -->
             <p class="lead">
                 by
-                <a href="#">Author</a>
+                <a href="../team.html">Nikolett Muller</a>
             </p>
 
             <hr>
 
             <!-- Post Content -->
-            <h4 id="item-1">Item 1</h4>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, vero, obcaecati, aut,
-                error quam sapiente nemo saepe quibusdam sit excepturi nam quia corporis eligendi eos magni recusandae
-                laborum minus inventore?</p>
+            <h4 id="item-1"></h4>
+            <p class="lead">Let us see the steps we need to take to connect Docker with a Pycharm project.</p>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste
-                ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus,
-                voluptatibus.</p>
+            <h5><strong>1. Requirements</strong></h5>
 
+            <p>To start working, we need to check a couple of things beforehand. </p>
+
+            <p>Needed requirements:</p>
+            <ul>
+                <li>Docker is installed</li>
+                <li>Pycharm Pro is installed</li>
+                <li>Git is installed</li>
+            </ul>
+            <p>When all requirements are met, we need to start <strong>Docker Desktop</strong> and <strong>Pycharm
+                Pro</strong>.</p>
+            <h5><strong>2. Creating a New Project</strong></h5>
+
+            <p>We create a new Python Project in Pycharm Pro. Then we go to <strong>Github</strong> and clone an
+                existing repository.</p>
+            <figure>
+                <img class="img-fluid rounded" src="../images/getting_repository.png"
+                     alt="It shows where we can copy URL from">
+                <figcaption>
+                    Copying URL for cloning
+                </figcaption>
+            </figure>
+
+            <p>Then we go back to Pycharm, click on <strong><i>VCS</i></strong> on top bar, then select <strong><i>Get
+                from Version Control…</i></strong> After that, we paste the URL of the existing repository and we give a
+                directory; finally, a quick click on to <strong><i>Clone button</i></strong>.</p>
+            <figure>
+                <img class="img-fluid rounded" src="../images/cloning_URL.png"
+                     alt="We need to insert URL here">
+                <figcaption>
+                    Inserting URL for cloning repository
+                </figcaption>
+            </figure>
+
+            <p>After we opened the project, we can check whether we got all the files successfully from the existing
+                repository in Github. As the image below shows, we have a <strong>my_script.py</strong> file which
+                includes the Python code, there is a <strong>.gitignore</strong> file, a <strong>README.md</strong> and
+                a highly important <strong>Dockerfile</strong>.</p>
+            <figure>
+                <img class="img-fluid rounded" src="../images/Files.png"
+                     alt="Local files">
+                <figcaption>
+                   Local files
+                </figcaption>
+            </figure>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, doloribus, dolorem iusto blanditiis unde
+                eius illum consequuntur neque dicta incidunt ullam ea hic porro optio ratione repellat perspiciatis.
+                Enim, iure!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, doloribus, dolorem iusto blanditiis unde
+                eius illum consequuntur neque dicta incidunt ullam ea hic porro optio ratione repellat perspiciatis.
+                Enim, iure!</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, doloribus, dolorem iusto blanditiis unde
                 eius illum consequuntur neque dicta incidunt ullam ea hic porro optio ratione repellat perspiciatis.
                 Enim, iure!</p>
