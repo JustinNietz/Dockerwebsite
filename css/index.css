@@ -17,7 +17,11 @@ nav {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+}
+
+.content-rounded {
+    background-color: white;
+    border-radius: 20px;
 }
 
 .affix {
