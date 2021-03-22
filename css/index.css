@@ -13,6 +13,13 @@ nav {
     margin: 5rem 0; /* Space out the Bootstrap <hr> more */
 }
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 .affix {
     top: 20px;
     z-index: 9999 !important;
