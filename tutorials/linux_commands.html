@@ -71,7 +71,7 @@
 
 
 <!-- Page Content -->
-<div class="container">
+<div class="container content-rounded">
     <div class="row">
 
         <!-- Post Content Column -->
@@ -83,27 +83,41 @@
             <!-- Author -->
             <p class="lead">
                 by
-                <a href="#">Author</a>
+                <a href="../team.html">Nikolett Muller</a>
             </p>
+            <!-- Preview Image -->
+            <img class="img-fluid rounded center" src="../images/linux_commands.svg" width="400" height="300"
+                 alt="commands">
 
             <hr>
-
             <!-- Post Content -->
-            <h4 id="item-1">Item 1</h4>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, vero, obcaecati, aut,
-                error quam sapiente nemo saepe quibusdam sit excepturi nam quia corporis eligendi eos magni recusandae
-                laborum minus inventore?</p>
+            <h4 id="item-1"></h4>
+            <p class="lead">Some of us feel stressed when it is about to work with a terminal. However, learning how to
+                use command line is worth every penny. Developers who understand the command line would claim that this
+                is one of the best tools at our disposal. Let us see some important commands!</p>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste
-                ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus,
-                voluptatibus.</p>
+            <h5><code>pwd</code> command</h5>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, doloribus, dolorem iusto blanditiis unde
-                eius illum consequuntur neque dicta incidunt ullam ea hic porro optio ratione repellat perspiciatis.
-                Enim, iure!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, doloribus, dolorem iusto blanditiis unde
-                eius illum consequuntur neque dicta incidunt ullam ea hic porro optio ratione repellat perspiciatis.
-                Enim, iure!</p>
+            <p>This command stands for <i>“print working directory”</i>. It shows us which directory we are currently located at.</p>
+            <figure>
+                <img class="img-fluid rounded" src="../images/pwd.png"
+                     alt="pwd command">
+                <figcaption>
+                    It gives our current directory
+                </figcaption>
+            </figure>
+
+            <h5><code>ls</code> command</h5>
+
+            <p>It gives a list of the contents of our current directory.</p>
+            <figure>
+                <img class="img-fluid rounded" src="../images/ls.png"
+                     alt="ls command">
+                <figcaption>
+                    The contents of the current directory
+                </figcaption>
+            </figure>
+
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, doloribus, dolorem iusto blanditiis unde
                 eius illum consequuntur neque dicta incidunt ullam ea hic porro optio ratione repellat perspiciatis.
                 Enim, iure!</p>
@@ -122,45 +136,34 @@
 
             <!-- Categories Widget -->
             <div class="card my-4">
-                <h5 class="card-header">Categories</h5>
+                <h5 class="card-header">All Tutorials</h5>
                 <div class="card-body">
                     <div class="row">
-                        <div class="col-lg-6">
-                            <ul class="list-unstyled mb-0">
+                        <div class="col-lg-12">
+                            <ul class="list-unstyled mb-0 text-center">
                                 <li>
-                                    <a href="#">Web Design</a>
+                                    <a href="../tutorials/server.html">Docker and Web server</a>
                                 </li>
                                 <li>
-                                    <a href="#">HTML</a>
+                                    <a href="../tutorials/connect.html">Connecting Docker with Pycharm</a>
                                 </li>
                                 <li>
-                                    <a href="#">Freebies</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-6">
-                            <ul class="list-unstyled mb-0">
-                                <li>
-                                    <a href="#">JavaScript</a>
-                                </li>
-                                <li>
-                                    <a href="#">CSS</a>
-                                </li>
-                                <li>
-                                    <a href="#">Tutorials</a>
+                                    <a href="../tutorials/linux_commands.html">Linux commands</a>
                                 </li>
                             </ul>
                         </div>
+
                     </div>
                 </div>
             </div>
 
             <!-- Side Widget -->
             <div class="card my-4">
-                <h5 class="card-header">Side Widget</h5>
+                <h5 class="card-header">Learn more</h5>
                 <div class="card-body">
-                    You can put anything you want inside of these side widgets. They are easy to use, and feature the
-                    new Bootstrap 4 card containers!
+                    <iframe class="center" height="300"
+                            src="https://www.youtube.com/embed/tG6JfLepOP8">
+                    </iframe>
                 </div>
             </div>
 
