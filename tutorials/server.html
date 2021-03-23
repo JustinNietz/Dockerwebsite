@@ -71,7 +71,7 @@
 
 
 <!-- Page Content -->
-<div class="container">
+<div class="container content-rounded">
     <div class="row">
 
         <!-- Post Content Column -->
@@ -85,6 +85,8 @@
                 by
                 <a href="../team.html">Nikolett Muller</a>
             </p>
+            <!-- Preview Image -->
+            <img class="img-fluid rounded center" src="../images/server.svg" width="400" height="300" alt="server">
 
             <hr>
 
@@ -92,11 +94,11 @@
             <h4 id="item-1"></h4>
             <p class="lead">Let us see how we can build a web server image which can be used to build containers.</p>
 
-            <h5><strong>1. Installing Docker</strong></h5>
+            <h2>1. Installing Docker</h2>
 
             <p>Firstly, we need to install Docker.</p>
 
-            <h6>A, Instructions for Windows Users</h6>
+            <h4>A, Instructions for Windows Users</h4>
             <p>There are needed requirements to install Docker Desktop:</p>
 
             <ul>
@@ -132,7 +134,7 @@
                 <figcaption>Whale icon on task bar</figcaption>
             </figure>
 
-            <h6>B, Instructions for MAC Users</h6>
+            <h4>B, Instructions for MAC Users</h4>
 
             <p>Needed requirements to install Docker Desktop:</p>
 
@@ -181,7 +183,7 @@
                 </figcaption>
             </figure>
 
-            <h5><strong>2. Pulling an Ubuntu Image from Docker Hub</strong></h5>
+            <h2>2. Pulling an Ubuntu Image from Docker Hub</h2>
             <p>We go to Docker Hub, and we search for an <strong>Ubuntu image</strong>.</p>
 
             <figure>
@@ -202,7 +204,7 @@
 
             <p>We can check whether the Ubuntu image is located on our computer. To do that, we can use <code>docker
                 images</code> command.</p>
-            <h5><strong>3. Installing Vim and Apache 2</strong></h5>
+            <h2>3. Installing Vim and Apache 2</h2>
 
             <p>To install the programs, we need to log in our Ubuntu in <strong>Docker container</strong>. We use the
                 following command to do that: <code>docker run -it ubuntu:latest /bin/bash</code>.
@@ -214,7 +216,6 @@
                      alt="Installing Apache 2 in terminal">
                 <figcaption>Installing Apache 2</figcaption>
             </figure>
-
 
             <p>After updating, we can start installing <strong>Apache 2</strong> on our image. We use the <code>apt-get
                 install
@@ -247,7 +248,7 @@
                 <figcaption>Three steps to create a new Docker image</figcaption>
             </figure>
 
-            <h5><strong>4. How to Share a Directory Between Docker and Host</strong></h5>
+            <h2>4. How to Share a Directory Between Docker and Host</h2>
 
             <p>The Docker container does not save any data after we close it. If we want to read and save any data in
                 the host, a <strong>shared directory</strong> is needed for Docker containers. To solve this problem, we
@@ -261,7 +262,7 @@
                 <figcaption>Creating the shared directory</figcaption>
             </figure>
 
-            <h5><strong>5. Using Vi to Create and Edit Index.html in the Shared Directory</strong></h5>
+            <h2>5. Using Vi to Create and Edit Index.html in the Shared Directory</h2>
 
             <p>We check the present working directory using <code>pwd</code> command. After checking it, we go to the
                 directory that will have the html file. To do that, we type <code>cd /var/www/html</code> command into
@@ -281,7 +282,7 @@
                 command to save the file and quit Vi.
             </p>
 
-            <h5><strong>6. How to Use Docker to Host a Website</strong></h5>
+            <h2>6. How to Use Docker to Host a Website</h2>
 
             <p>To host our website, we need to start Apache 2 service using <code>/etc/init.d/apache2 restart </code>
                 command.</p>
@@ -310,45 +311,34 @@
 
             <!-- Categories Widget -->
             <div class="card my-4">
-                <h5 class="card-header">Categories</h5>
+                <h5 class="card-header">All Tutorials</h5>
                 <div class="card-body">
                     <div class="row">
-                        <div class="col-lg-6">
-                            <ul class="list-unstyled mb-0">
+                        <div class="col-lg-12">
+                            <ul class="list-unstyled mb-0 text-center">
                                 <li>
-                                    <a href="#">Web Design</a>
+                                    <a href="../tutorials/server.html">Docker and Web server</a>
                                 </li>
                                 <li>
-                                    <a href="#">HTML</a>
+                                    <a href="../tutorials/connect.html">Connecting Docker with Pycharm</a>
                                 </li>
                                 <li>
-                                    <a href="#">Freebies</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-6">
-                            <ul class="list-unstyled mb-0">
-                                <li>
-                                    <a href="#">JavaScript</a>
-                                </li>
-                                <li>
-                                    <a href="#">CSS</a>
-                                </li>
-                                <li>
-                                    <a href="#">Tutorials</a>
+                                    <a href="../tutorials/linux_commands.html">Linux commands</a>
                                 </li>
                             </ul>
                         </div>
+
                     </div>
                 </div>
             </div>
 
             <!-- Side Widget -->
             <div class="card my-4">
-                <h5 class="card-header">Side Widget</h5>
+                <h5 class="card-header">Learn more</h5>
                 <div class="card-body">
-                    You can put anything you want inside of these side widgets. They are easy to use, and feature the
-                    new Bootstrap 4 card containers!
+                    <iframe class="center" height="300"
+                    src="https://www.youtube.com/embed/2FOnngHmF7Y">
+                    </iframe>
                 </div>
             </div>
 
