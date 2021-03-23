@@ -9,5 +9,5 @@
 | Feature: Added Containerization information                  | Justin Nietzer | 
 | Feature: Added Comparison information                        | Justin Nietzer | 
 | Feature: Added Docker login and Web Server setup information | Nikolett Muller | 
-| Feature: added Connecting Docker with Pycharm information    | Nikolett Mullerr |
+| Feature: added Connecting Docker with Pycharm information    | Nikolett Muller |
 | Feature: Added Linux Commands information                    | Nikolett Muller | 
