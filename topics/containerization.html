@@ -50,7 +50,8 @@
                         Tutorials
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="../tutorials/server.html">How to Setup a Web Server Using Docker</a>
+                        <a class="dropdown-item" href="../tutorials/server.html">How to Setup a Web Server Using
+                            Docker</a>
                         <a class="dropdown-item" href="../tutorials/connect.html">How to Connect Docker with Pycharm</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="../tutorials/linux_commands.html">Extras: Linux Commands</a>
@@ -68,7 +69,7 @@
 </nav>
 
 <!-- Page Content -->
-<div class="container">
+<div class="container content-rounded">
 
     <div class="row">
 
@@ -81,37 +82,73 @@
             <!-- Author -->
             <p class="lead">
                 by
-                <a href="#">Author</a>
+                <a href="../team.html">Justin Nietzer</a>
             </p>
 
 
             <!-- Preview Image -->
-            <img class="img-fluid rounded" src="http://placehold.it/900x300" alt="">
+            <img class="img-fluid rounded center" src="../images/containerization.svg" width="400" height="300"
+                 alt="containerization">
 
-            <hr class="featurette-divider">
+            <hr>
 
             <!-- Post Content -->
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, vero, obcaecati, aut,
-                error quam sapiente nemo saepe quibusdam sit excepturi nam quia corporis eligendi eos magni recusandae
-                laborum minus inventore?</p>
+            <h2>Definition</h2>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste
-                ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus,
-                voluptatibus.</p>
+            <p>Containerization is a strategy of bringing Virtualization to the OS-level. This technique is more
+                effective than Virtualization since there is no guest OS to utilize a host’s OS and such do not have to
+                share relevant libraries and resources. Virtual machines, however, have to share the host’s OS and all
+                its resources.</p>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, doloribus, dolorem iusto blanditiis unde
-                eius illum consequuntur neque dicta incidunt ullam ea hic porro optio ratione repellat perspiciatis.
-                Enim, iure!</p>
+            <p>Containerization is a lightweight alternative to full machine virtualization that involves encapsulating
+                an application in a container with its OS. Containerization boots up in a shorter amount of time than
+                virtualization because the container shares the host’s OS and holds only applications that are related
+                to binaries and libraries.</p>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, nostrum, aliquid, animi, ut quas placeat
-                totam sunt tempora commodi nihil ullam alias modi dicta saepe minima ab quo voluptatem obcaecati?</p>
+            <h2>Advantages of Containerization</h2>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, dolor quis. Sunt, ut, explicabo, aliquam
-                tenetur ratione tempore quidem voluptates cupiditate voluptas illo saepe quaerat numquam recusandae?
-                Qui, necessitatibus, est!</p>
+            <ul>
+                <li>
+                    Containers are lightweight so you can deploy multiple containers on a single server
+                </li>
+                <li>
+                    Only have one OS to maintain so scaling up becomes easy without needing more server space
+                </li>
+            </ul>
 
-            <hr class="featurette-divider">
+            <h2>Disadvantages of Containerization</h2>
 
+            <ul>
+                <li>
+                    All containers on a host machine must be designed to run on the same kind of OS.
+                </li>
+                <li>
+                    Because the OS is shared, a security vulnerability in the OS kernel threatens all containers
+                </li>
+            </ul>
+
+            <img class="center" width="350" height="300" src="../images/containerization-daigram-616x420.jpg">
+
+            <p><em>In the above diagram, there is one host Operating system shared by all containers. The container
+                contains only applications specific to libraries isolated from other containers.</em></p>
+
+            <h2>How to Install a Containerization Tool</h2>
+
+            <img class="center" width="200" height="150" src="../images/docker-logo.png">
+
+            <p>Docker is an example of a containerization platform. It runs containers independent of the OS. Docker is
+                the virtualization of the operating system, which denotes the development and delivery of products and
+                packages in the form of containers. Read more here: <a
+                        href="https://www.cloudmanagementinsider.com/what-is-docker/" target="_blank">Is Docker a real
+                    game changer for Container Management?</a>
+            </p>
+
+            <p>Docker is a popular containerization tool. <a href="https://docs.docker.com/docker-for-windows/install/"
+                                                             target="_blank">Click here</a> for instructions on how to
+                install docker on
+                Windows 10. Note: There are different installation paths on whether you have windows 10 Home or Pro.
+                <a href="https://support.microsoft.com/en-us/windows/which-version-of-windows-operating-system-am-i-running-628bec99-476a-2c13-5296-9dd081cdd808#:~:text=Select%20the%20Start%20button%2C%20type,that%20your%20device%20is%20running."
+                   target="_blank"> Click here</a> to find out which you have.</p>
 
         </div>
 
@@ -120,32 +157,19 @@
 
             <!-- Categories Widget -->
             <div class="card my-4">
-                <h5 class="card-header">Categories</h5>
+                <h5 class="card-header">All Topics</h5>
                 <div class="card-body">
                     <div class="row">
-                        <div class="col-lg-6">
-                            <ul class="list-unstyled mb-0">
+                        <div class="col-lg-12">
+                            <ul class="list-unstyled mb-0 text-center">
                                 <li>
-                                    <a href="#">Web Design</a>
+                                    <a href="virtualization.html">Virtualization</a>
                                 </li>
                                 <li>
-                                    <a href="#">HTML</a>
+                                    <a href="containerization.html">Containerization</a>
                                 </li>
                                 <li>
-                                    <a href="#">Freebies</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-6">
-                            <ul class="list-unstyled mb-0">
-                                <li>
-                                    <a href="#">JavaScript</a>
-                                </li>
-                                <li>
-                                    <a href="#">CSS</a>
-                                </li>
-                                <li>
-                                    <a href="#">Tutorials</a>
+                                    <a href="compare.html">Comparison</a>
                                 </li>
                             </ul>
                         </div>
@@ -155,10 +179,11 @@
 
             <!-- Side Widget -->
             <div class="card my-4">
-                <h5 class="card-header">Side Widget</h5>
+                <h5 class="card-header">Learn More</h5>
                 <div class="card-body">
-                    You can put anything you want inside of these side widgets. They are easy to use, and feature the
-                    new Bootstrap 4 card containers!
+                           <iframe class="center" height="300"
+                    src="https://www.youtube.com/embed/0qotVMX-J5s">
+            </iframe>
                 </div>
             </div>
 
@@ -166,23 +191,23 @@
 
     </div>
     <!-- /.row -->
-
+    <hr class="featurette-divider">
 </div>
 <!-- /.container -->
 
 <!-- Pagination -->
 <nav aria-label="Page navigation example">
-  <ul class="pagination justify-content-center">
-    <li class="page-item">
-      <a class="page-link" href="virtualization.html" tabindex="-1">Previous</a>
-    </li>
-    <li class="page-item"><a class="page-link" href="virtualization.html">1</a></li>
-    <li class="page-item active"><a class="page-link" href="containerization.html">2</a></li>
-    <li class="page-item"><a class="page-link" href="compare.html">3</a></li>
-    <li class="page-item">
-      <a class="page-link" href="compare.html">Next</a>
-    </li>
-  </ul>
+    <ul class="pagination justify-content-center">
+        <li class="page-item">
+            <a class="page-link" href="virtualization.html" tabindex="-1">Previous</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="virtualization.html">1</a></li>
+        <li class="page-item active"><a class="page-link" href="containerization.html">2</a></li>
+        <li class="page-item"><a class="page-link" href="compare.html">3</a></li>
+        <li class="page-item">
+            <a class="page-link" href="compare.html">Next</a>
+        </li>
+    </ul>
 </nav>
 
 <!-- Footer -->
