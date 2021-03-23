@@ -50,7 +50,8 @@
                         Tutorials
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="../tutorials/server.html">How to Setup a Web Server Using Docker</a>
+                        <a class="dropdown-item" href="../tutorials/server.html">How to Setup a Web Server Using
+                            Docker</a>
                         <a class="dropdown-item" href="../tutorials/connect.html">How to Connect Docker with Pycharm</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="../tutorials/linux_commands.html">Extras: Linux Commands</a>
@@ -68,7 +69,7 @@
 </nav>
 
 <!-- Page Content -->
-<div class="container">
+<div class="container content-rounded">
 
     <div class="row">
 
@@ -81,37 +82,66 @@
             <!-- Author -->
             <p class="lead">
                 by
-                <a href="#">Author</a>
+                <a href="../team.html">Justin Nietzer</a>
             </p>
 
 
             <!-- Preview Image -->
-            <img class="img-fluid rounded" src="http://placehold.it/900x300" alt="">
+            <img class="rounded center" src="../images/compare.svg" width="400" height="300"
+                 alt="containerization">
 
-            <hr class="featurette-divider">
+            <hr>
 
             <!-- Post Content -->
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, vero, obcaecati, aut,
-                error quam sapiente nemo saepe quibusdam sit excepturi nam quia corporis eligendi eos magni recusandae
-                laborum minus inventore?</p>
+            <p>Containers and virtual machines are two of the top approaches to improve scalability and reduce overhead
+                costs. Both can help a software team become responsive to business demands.</p>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste
-                ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus,
-                voluptatibus.</p>
+            <p>Virtualization enables you to run multiple operating systems on a single physical server while
+                containerization enables you to deploy multiple applications using the same operating system on a single
+                server.</p>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, doloribus, dolorem iusto blanditiis unde
-                eius illum consequuntur neque dicta incidunt ullam ea hic porro optio ratione repellat perspiciatis.
-                Enim, iure!</p>
+            <p>Both containers and virtual machines are software that create self-contained virtual packages. Although
+                they share this commonality, they do differ in their characteristics.</p>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, nostrum, aliquid, animi, ut quas placeat
-                totam sunt tempora commodi nihil ullam alias modi dicta saepe minima ab quo voluptatem obcaecati?</p>
+            <h2>The Main Differences</h2>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, dolor quis. Sunt, ut, explicabo, aliquam
-                tenetur ratione tempore quidem voluptates cupiditate voluptas illo saepe quaerat numquam recusandae?
-                Qui, necessitatibus, est!</p>
+            <ol>
+                <li><strong>The advantage of multiple copies</strong></li>
+                <ol>
+                    Many copies of a container can exist at the same time in a system. If any container failed, you
+                    can remove the defective one and replace it. While doing this, there will be no change or impact on
+                    the service itself. Older versions can exist at the same time with newer versions.
+                </ol>
+                <li><strong>Scaling related workloads</strong></li>
+                <ol>
+                    Containers only contain services that have the capability of judging when there is a need for
+                    scaling based on the sequence of traffic follows.
+                </ol>
+                <li><strong>Foundation for running an application</strong></li>
+                <ol>
+                    Containerization can only run the Linux application since it only supports the Linux environment.
+                </ol>
+                <li><strong>Using microservices architecture</strong></li>
+                <ol>
+                    One can operate these microservice systems without excluding any single application.
+                </ol>
+            </ol>
 
-            <hr class="featurette-divider">
+            <h2>Which should you use?</h2>
 
+            <p>It depends on your objective! </p>
+
+            <p>Virtual machines are great for supporting applications that require an operating system’s full
+                functionality. Containers are a better choice when your biggest priority is to minimize the number of
+                servers you’re using for multiple applications.</p>
+
+            <p>Containerization offers an elective strategy for Virtualization in which a single working framework on a
+                host can run a wide range of users from the cloud.</p>
+
+            <p>The use case makes a big difference in deciding which is better for you. Because of their fast set up
+                time, containers offer a better choice for tasks with a much shorter lifecycle. Virtualization, however,
+                has a longer lifecycle and are used for longer periods of time. <a href="https://www.burwood.com/blog-archive/containerization-vs-virtualization#:~:text=Virtualization%20enables%20you%20to%20run,single%20virtual%20machine%20or%20server" target="_blank">Read here</a> if you want more
+                information.</p>
 
         </div>
 
@@ -120,32 +150,19 @@
 
             <!-- Categories Widget -->
             <div class="card my-4">
-                <h5 class="card-header">Categories</h5>
+                <h5 class="card-header">All Topics</h5>
                 <div class="card-body">
                     <div class="row">
-                        <div class="col-lg-6">
-                            <ul class="list-unstyled mb-0">
+                        <div class="col-lg-12">
+                            <ul class="list-unstyled mb-0 text-center">
                                 <li>
-                                    <a href="#">Web Design</a>
+                                    <a href="virtualization.html">Virtualization</a>
                                 </li>
                                 <li>
-                                    <a href="#">HTML</a>
+                                    <a href="containerization.html">Containerization</a>
                                 </li>
                                 <li>
-                                    <a href="#">Freebies</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-6">
-                            <ul class="list-unstyled mb-0">
-                                <li>
-                                    <a href="#">JavaScript</a>
-                                </li>
-                                <li>
-                                    <a href="#">CSS</a>
-                                </li>
-                                <li>
-                                    <a href="#">Tutorials</a>
+                                    <a href="compare.html">Comparison</a>
                                 </li>
                             </ul>
                         </div>
@@ -155,10 +172,11 @@
 
             <!-- Side Widget -->
             <div class="card my-4">
-                <h5 class="card-header">Side Widget</h5>
+                <h5 class="card-header">Learn More</h5>
                 <div class="card-body">
-                    You can put anything you want inside of these side widgets. They are easy to use, and feature the
-                    new Bootstrap 4 card containers!
+                           <iframe class="center" height="300"
+                    src="https://www.youtube.com/embed/cjXI-yxqGTI">
+            </iframe>
                 </div>
             </div>
 
@@ -167,22 +185,24 @@
     </div>
     <!-- /.row -->
 
+    <hr class="featurette-divider">
+
 </div>
 <!-- /.container -->
 
 <!-- Pagination -->
 <nav aria-label="Page navigation example">
-  <ul class="pagination justify-content-center">
-    <li class="page-item">
-      <a class="page-link" href="containerization.html" tabindex="-1">Previous</a>
-    </li>
-    <li class="page-item"><a class="page-link" href="virtualization.html">1</a></li>
-    <li class="page-item"><a class="page-link" href="containerization.html">2</a></li>
-    <li class="page-item active"><a class="page-link" href="compare.html">3</a></li>
-    <li class="page-item">
-      <a class="page-link disabled" href="#">Next</a>
-    </li>
-  </ul>
+    <ul class="pagination justify-content-center">
+        <li class="page-item">
+            <a class="page-link" href="containerization.html" tabindex="-1">Previous</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="virtualization.html">1</a></li>
+        <li class="page-item"><a class="page-link" href="containerization.html">2</a></li>
+        <li class="page-item active"><a class="page-link" href="compare.html">3</a></li>
+        <li class="page-item">
+            <a class="page-link disabled" href="#">Next</a>
+        </li>
+    </ul>
 </nav>
 
 <!-- Footer -->
