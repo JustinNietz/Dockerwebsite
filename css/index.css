@@ -19,6 +19,9 @@ nav {
   margin-right: auto;
 }
 
+.video-adjust {
+    width: 100%;
+}
 .content-rounded {
     background-color: white;
     border-radius: 20px;
